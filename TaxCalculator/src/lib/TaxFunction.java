@@ -4,13 +4,13 @@ public class TaxFunction {
 
 	
 	/**
-	 * Fungsi untuk menghitung jumlah pajak penghasilan pegawai yang harus dibayarkan setahun.
+	 * Fungsi digunakan untuk menghitung jumlah pajak penghasilan pegawai yang harus dibayarkan setahun.
 	 * 
-	 * Pajak dihitung sebagai 5% dari penghasilan bersih tahunan (gaji dan pemasukan bulanan lainnya dikalikan jumlah bulan bekerja dikurangi pemotongan) dikurangi penghasilan tidak kena pajak.
+	 * Pajak dihitung sebagai 5% dari penghasilan bersih tahunan (gaji dan pemasukan bulanan lainnya dikalikan jumlah bulan bekerja dikurangi pemotongan).
 	 * 
-	 * Jika pegawai belum menikah dan belum punya anak maka penghasilan tidak kena pajaknya adalah Rp 54.000.000.
+	 * Jika pegawai belum menikah dan belum punya anak maka penghasilan yang tidak kena pajaknya adalah sampai dengan Rp 54.000.000.
 	 * Jika pegawai sudah menikah maka penghasilan tidak kena pajaknya ditambah sebesar Rp 4.500.000.
-	 * Jika pegawai sudah memiliki anak maka penghasilan tidak kena pajaknya ditambah sebesar Rp 4.500.000 per anak sampai anak ketiga.
+	 * Jika pegawai sudah memiliki anak maka penghasilan tidak kena pajaknya ditambah sebesar Rp 1.500.000 per anak sampai anak ketiga.
 	 * 
 	 */
 	
@@ -20,7 +20,7 @@ public class TaxFunction {
 		int tax = 0;
 		
 		if (numberOfMonthWorking > 12) {
-			System.err.println("More than 12 month working per year");
+			System.out.println("More than 12 month working per year");
 		}
 		
 		if (numberOfChildren > 3) {
